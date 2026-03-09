@@ -5,10 +5,9 @@ body {
 }
 
 div#treaty-logo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 10px;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
 }
 
 .treaty-one-logo {
@@ -51,6 +50,24 @@ p {
   color: #191717;
   font-size: 18px;
   font-family: "Georgia", serif;
+  list-style: none;
+  font-weight: bold;
+  font-style: italic;
+}
+nav a {
+  color: #191717;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 15px;
+  background-color: #65baee;
+  transition: background-color 0.3s ease;
+}
+nav a:hover {
+  background-color: #5ccbd0;
+  color: white;
+  transition: ease-in-out 0.3s;
+  padding: 20px 25px;
+  border-radius: 20px;
 }
 figure {
   display: flex;
@@ -63,4 +80,24 @@ figcaption {
   color: #191717;
   font-size: 14px;
   margin-top: 5px;
+}
+footer {
+  text-align: center;
+  background-color: aliceblue;
+}
+.div-images {
+  padding: 10px;
+  border-radius: 15px;
+}
+span {
+  color: #191717;
+  font-weight: bold;
+  background-color: #7cc4ee;
+}
+footer {
+  text-align: center;
+  background-color: rgb(198, 213, 226);
+  font-style: italic;
+  font-weight: bold;
+  font-size: 10px;
 }
