@@ -1,10 +1,29 @@
 body {
-  background-color: whitesmoke;
+  background-color: #e4f9fa;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+div#treaty-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+}
+
+.treaty-one-logo {
+  height: 60px;
+  gap: 60px;
 }
 h1 {
   color: #191717;
   text-align: center;
-  background-color: #d8d8d8;
+  background-color: #7cc4ee;
+  padding: 10px;
+  border: 10px solid #5ccbd0;
+}
+h2 {
+  text-align: center;
 }
 p {
   color: black;
@@ -12,7 +31,7 @@ p {
   padding: 10px;
 }
 
-#div-one {
+.div-one {
   background-color: #d8d8d8;
   padding: 10px;
   border: 10px solid rgb(137, 132, 132);
@@ -23,13 +42,25 @@ p {
   padding: 10px;
 }
 .nav-links {
-  background-color: #d8d8d8;
+  background-color: #7cc4ee;
   padding: 10px;
   display: flex;
   justify-content: center;
   gap: 30px;
-  border: 10px solid #191717;
+  border: 10px solid #5ccbd0;
   color: #191717;
   font-size: 18px;
   font-family: "Georgia", serif;
+}
+figure {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+figcaption {
+  text-align: center;
+  font-style: italic;
+  color: #191717;
+  font-size: 14px;
+  margin-top: 5px;
 }
