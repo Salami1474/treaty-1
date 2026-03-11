@@ -1,11 +1,31 @@
+<!-- Name: Feranmi Adesanya
+Course: Web Development II
+Teacher: Mr. Hardman
+School: Pembina Trails Collegiate/Pembina Trails Early College
+Date Last Modified: March 10th 2026.-->
+
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Treaty 1</title>
-    <link rel="stylesheet" href="stylesheets/stylesheets.css" />
-    <style></style>
+    <link rel="stylesheet" href="stylesheets/styles.css" />
+    <style>
+      span {
+        background-color: rgb(175, 240, 253);
+        text-align: center;
+        padding: 10px 15px;
+        border-radius: 15px;
+        font-family: serif;
+        font-size: 25px;
+        font-weight: bold;
+        border: 10px solid #82d3d7;
+      }
+      section {
+        margin-bottom: 30px;
+      }
+    </style>
   </head>
   <!-- The id "gradient-box" is used to apply a background gradient to the entire webpage. -->
   <body id="gradient-box">
@@ -19,41 +39,39 @@
           width="600"
           height="300" />
       </div>
-      <br />
+
       <nav>
+        <!-- These navigation links allow users to navigate between different
+        sections of the website. The links are being styled using the class 
+        attribute with a name of "nav-links". -->
         <ul class="nav-links">
-          <li style="font-family: &quot;Georgia&quot;, serif; font-size: 18px">
+          <li class="nav-item">
             <a href="index.html">Home</a>
           </li>
-          <li style="font-family: &quot;Georgia&quot;, serif; font-size: 18px">
+          <li class="nav-item">
             <a href="people-involved.html">People Involved</a>
           </li>
-          <li style="font-family: &quot;Georgia&quot;, serif; font-size: 18px">
+          <li class="nav-item">
             <a href="what-was-promised.html">What Was Promised in the Treaty</a>
           </li>
         </ul>
       </nav>
-      <span>
-        <hr />
-        <h1>Treaty 1</h1>
-      </span>
+      <!-- This horizontal line break is used to seperate the nav links and 
+      logo from the main content and rest of the webpage. -->
+      <hr />
     </header>
+    <h1>Treaty 1</h1>
+    <!-- This is the main content area of the webpage. -->
+
     <main>
       <section>
+        <!-- This span element is used to style the heading for the content 
+        in the introduction h2 header and all the other content in the h2 headers. -->
         <h2>
-          <span
-            style="
-              background-color: #82d3d7;
-              text-align: center;
-              padding: 10px 15px;
-              border-radius: 15px;
-              font-family: serif;
-              font-size: 25px;
-              font-weight: bold;
-            "
-            >Introduction to Treaty 1</span
-          >
+          <span>Introduction to Treaty 1</span>
         </h2>
+        <!-- This div element is used, with an attribute of class "div-paragraphs",
+        to style the paragraphs under each h2 header. -->
         <div class="div-paragraphs">
           <p>
             Treaty 1, also known as the Stone Fort Treaty, was the first of the
@@ -76,19 +94,7 @@
       </section>
       <section>
         <h2>
-          <span
-            style="
-              background-color: #82d3d7;
-
-              text-align: center;
-              padding: 10px 15px;
-              border-radius: 15px;
-              font-family: serif;
-              font-size: 25px;
-              font-weight: bold;
-            "
-            >Why was Treaty 1 Important?</span
-          >
+          <span>Why was Treaty 1 Important?</span>
         </h2>
         <div class="div-paragraphs">
           <p>
@@ -108,18 +114,7 @@
       </section>
       <section>
         <h2>
-          <span
-            style="
-              background-color: #82d3d7;
-              text-align: center;
-              padding: 10px 15px;
-              border-radius: 15px;
-              font-family: serif;
-              font-size: 25px;
-              font-weight: bold;
-            "
-            >Where Was Treaty 1 Signed?</span
-          >
+          <span>Where Was Treaty 1 Signed?</span>
         </h2>
         <div class="div-paragraphs">
           <p>
@@ -136,18 +131,7 @@
 
       <section>
         <h2>
-          <span
-            style="
-              background-color: #82d3d7;
-              text-align: center;
-              padding: 10px 15px;
-              border-radius: 15px;
-              font-family: serif;
-              font-size: 25px;
-              font-weight: bold;
-            "
-            >Conclusion</span
-          >
+          <span>Conclusion</span>
         </h2>
         <div class="div-paragraphs">
           <p>
@@ -162,39 +146,46 @@
           </p>
         </div>
       </section>
-      <section>
-        <div class="images">
-          <figure>
+      <section style="margin-bottom: 60px">
+        <figure>
+          <!-- This div element, with an identifier of "treaty-medal-image", 
+          is used to style the image container for the treaty medal.-->
+          <div id="treaty-medal-image">
             <img
               src="images/treaty-medal.jpeg"
               alt="A picture of the treaty medal that was given to the Indigenous people as a representation of Treaty 1"
               width="400"
               height="250" />
-          </figure>
-        </div>
-        <figcaption>
-          A picture of the treaty medal that was given to the Indigenous people
-          as a representation of Treaty 1
-        </figcaption>
+          </div>
+          <!-- This figcaption element is used to provide a description for the 
+        treaty medal image. -->
+          <figcaption>
+            A picture of the treaty medal that was given to the Indigenous
+            people as a representation of Treaty 1
+          </figcaption>
+        </figure>
       </section>
-      <br />
 
-      <br />
       <section>
         <figure>
-          <img
-            src="images/treaty-1-map.jpg"
-            alt="A map of where Treaty 1 was located"
-            width="550"
-            height="500" />
+          <!-- This div element, with an identifier of "div-map", 
+          is used to style the image container for the treaty map.-->
+          <div id="div-map">
+            <img
+              src="images/treaty-1-map.jpg"
+              alt="A-map-of-where-Treaty-1-was-Located"
+              width="550"
+              height="500" />
+          </div>
+          <!-- This figcaption element is used to provide a description for the 
+        treaty map image. -->
+          <figcaption>
+            A map of where Treaty 1 was located, with other treaties
+          </figcaption>
         </figure>
-        <figcaption>
-          A map of where Treaty 1 was located, with other treaties
-        </figcaption>
       </section>
     </main>
     <footer>
-      <hr />
       <p>&copy; 2026 Feranmi Adesanya. Treaty 1</p>
     </footer>
   </body>
