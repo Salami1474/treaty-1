@@ -2,7 +2,7 @@
 Course: Web Development II
 Teacher: Mr. Hardman
 School: Pembina Trails Collegiate/Pembina Trails Early College
-Date Last Modified: March 10th 2026.-->
+Date Last Modified: March 12th 2026.-->
 
 <!doctype html>
 <html lang="en">
@@ -13,33 +13,39 @@ Date Last Modified: March 10th 2026.-->
     <link rel="stylesheet" href="stylesheets/styles.css" />
     <style>
       span {
-        background-color: rgb(175, 240, 253);
-        text-align: center;
-        padding: 10px 15px;
-        border-radius: 15px;
-        font-family: serif;
-        font-size: 25px;
-        font-weight: bold;
-        border: 10px solid #82d3d7;
+        background-color: rgb(
+          /* Background color of the span elements, which are used to style the h2 headers. The rgb 236 96 84 colour is used. */
+          236,
+          96,
+          84
+        ); /* Background color of the span elements, which are used to style the h2 headers. */
+        color: rgb(252, 255, 255);
+        text-align: center; /* Aligns the text in the center of the span elements. */
+        padding: 10px 15px; /* Adds space around the sides of the span elements. 10 px for top and bottom, 15 px for the sides. */
+        border-radius: 15px; /* Rounds the corners of the span elements with a radius of 15 pixels. */
+        font-family: serif; /* Sets the font family for the span elements to serif. */
+        font-size: 25px; /* Sets the font size for the span elements to 25 pixels. */
+        font-weight: bold; /* Makes the text in the span elements bold. */
+        border: 10px solid #e99191; /* Adds a border around the span elements with a width of 10 pixels and a color of #e99191. */
       }
       section {
-        margin-bottom: 30px;
+        margin-bottom: 30px; /* Gives the bottom of the every section a margin space of 30 pixels at the bottom. */
       }
     </style>
   </head>
   <!-- The id "gradient-box" is used to apply a background gradient to the entire webpage. -->
   <body id="gradient-box">
     <header>
-      <!-- The id "treaty-logo" is used to give an identity to the treaty logo image and is also use
-      to style the image of the treaty logo. -->
-      <div id="treaty-logo">
+      <figure>
+        <!-- This img element is used to display the treaty logo on the webpage. The ID of this image tag
+        is "treaty-logo" which is used to style the image tag and is used to identify the tag. -->
         <img
+          id="treaty-logo"
           src="images/treaty-1 logo (2).gif"
           alt="An-Image-of-the-Treaty-one-logo"
           width="600"
           height="300" />
-      </div>
-
+      </figure>
       <nav>
         <!-- These navigation links allow users to navigate between different
         sections of the website. The links are being styled using the class 
@@ -56,8 +62,6 @@ Date Last Modified: March 10th 2026.-->
           </li>
         </ul>
       </nav>
-      <!-- This horizontal line break is used to seperate the nav links and 
-      logo from the main content and rest of the webpage. -->
     </header>
     <h1>Treaty 1</h1>
     <!-- This is the main content area of the webpage. -->
@@ -70,7 +74,7 @@ Date Last Modified: March 10th 2026.-->
           <span>Introduction to Treaty 1</span>
         </h2>
         <!-- This div element is used, with an attribute of class "div-paragraphs",
-        to style the paragraphs under each h2 header. -->
+        to style the paragraphs under each h2 header. It groups the realted parapgraph elements together. -->
         <div class="div-paragraphs">
           <p>
             Treaty 1, also known as the Stone Fort Treaty, was the first of the
@@ -101,13 +105,16 @@ Date Last Modified: March 10th 2026.-->
             between the Canadian government and Indigenous peoples in southern
             Manitoba. It was the first of the numbered treaties signed in Canada
             and set a precedent for future treaties. The treaty promised various
-            benefits to Indigenous peoples in this treaty. Treaty 1 was required
-            because the Canadian government was attempting to gain legal control
-            over lands which were held at the time by various Native groups
-            staying in Manitoba. The treaty states the Queen Victoria was
-            interested in expanding settlement westward, onto lands that the
-            Natives currently lived in. It was also used as supposed act of good
-            will and peace between the Natives and the Canadian government.
+            benefits to Indigenous peoples in this treaty.
+          </p>
+          <p>
+            Treaty 1 was required because the Canadian government was attempting
+            to gain legal control over lands which were held at the time by
+            various Native groups staying in Manitoba. The treaty states the
+            Queen Victoria was interested in expanding settlement westward, onto
+            lands that the Natives currently lived in. It was also used as
+            supposed act of good will and peace between the Natives and the
+            Canadian government.
           </p>
         </div>
       </section>
@@ -119,8 +126,11 @@ Date Last Modified: March 10th 2026.-->
           <p>
             Indian Treaty No. 1, or The Stone Fort treaty, as it is also known
             as the first treaty before the next 10 numbered treaties in Western
-            Canada. It is still in effect today and is commemorated by a plaque
-            at Lower Fort Garry national historic site of Canada, near Winnipeg,
+            Canada.
+          </p>
+          <p>
+            It is still in effect today and is commemorated by a plaque at Lower
+            Fort Garry national historic site of Canada, near Winnipeg,
             Manitoba. The fort, dubbed the Stone Fort by local First Nations
             peoples, was commemorated for its association with treaty
             negotiations and as an important Hudson’s Bay Company post.
@@ -138,24 +148,29 @@ Date Last Modified: March 10th 2026.-->
             and Indigenous peoples in southern Manitoba. It established a formal
             relationship and set a precedent for future treaties. However, the
             actual intent behind the treaty was to remove the First Nations from
-            their land and to provide benefits that were not fulfilled. The
-            treaty is still in effect today and serves as a reminder of the
+            their land and to provide benefits that were not fulfilled.
+          </p>
+          <p>
+            The treaty is still in effect today and serves as a reminder of the
             complex history between Indigenous peoples and the Canadian
             government.
           </p>
         </div>
       </section>
+      <!-- This section is used to display the treaty medal image and its description. It has an inline styling to give it a margin space of 60 pixels at the bottom.
+      It is inline because the pixel size varies from the other sections.
+      -->
       <section style="margin-bottom: 60px">
         <figure>
-          <!-- This div element, with an identifier of "treaty-medal-image", 
-          is used to style the image container for the treaty medal.-->
-          <div id="treaty-medal-image">
-            <img
-              src="images/treaty-medal.jpeg"
-              alt="A picture of the treaty medal that was given to the Indigenous people as a representation of Treaty 1"
-              width="400"
-              height="250" />
-          </div>
+          <!-- This img tag has an ID of "treaty-medal-image"  as it displays the treaty medal and the ID is used
+          to style the img tag.-->
+          <img
+            id="treaty-medal-image"
+            src="images/treaty-medal.jpeg"
+            alt="A picture of the treaty medal that was given to the Indigenous people as a representation of Treaty 1"
+            width="400"
+            height="250" />
+
           <!-- This figcaption element is used to provide a description for the 
         treaty medal image. -->
           <figcaption>
@@ -167,15 +182,15 @@ Date Last Modified: March 10th 2026.-->
 
       <section>
         <figure>
-          <!-- This div element, with an identifier of "div-map", 
-          is used to style the image container for the treaty map.-->
-          <div id="div-map">
-            <img
-              src="images/treaty-1-map.jpg"
-              alt="A-map-of-where-Treaty-1-was-Located"
-              width="550"
-              height="500" />
-          </div>
+          <!-- This img tag has an ID of "treaty-map"  as it displays the treaty map image and the ID is used
+          to style the img tag.-->
+          <img
+            id="treaty-map"
+            src="images/treaty-1-map.jpg"
+            alt="A-map-of-where-Treaty-1-was-Located"
+            width="550"
+            height="500" />
+
           <!-- This figcaption element is used to provide a description for the 
         treaty map image. -->
           <figcaption>
