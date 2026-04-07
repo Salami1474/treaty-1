@@ -1,8 +1,12 @@
+html {
+  font-size: 62.5%;
+}
 body {
   background-color: #f5f5f5; /* Gives the body a background colour of #e4f9fa. */
   margin: 0; /* Removes the default margin from the body. */
   font-family:
     Arial, sans-serif; /* Sets the font family for the body to Arial, with a fallback to sans-serif. */
+  font-size: 1.6rem; /* Sets the font size for the body to 1.6rem. */
 }
 
 #treaty-logo {
@@ -11,7 +15,7 @@ body {
   padding: 20px; /* Adds padding around the treaty logo. */
   background-color: #1f3a5f; /* Sets the background color of the treaty logo to #82d3d7. */
   border-radius: 100px; /* Rounds the corners of the treaty logo with a radius of 100 pixels, giving it a circular appearance. */
-  border: 10px solid #3a5477;
+
   margin-bottom: 30px; /* Adds a margin space of 30 pixels at the bottom of the treaty logo. */
   align-items: center; /* Aligns items in the center of the treaty logo. */
 }
@@ -39,7 +43,7 @@ p {
 .div-paragraphs {
   background-color: #d9e1e8; /* Sets the background color of the div element with the class "div-paragraphs" to #7de4e1. */
   padding: 10px; /* Adds padding around the content of the div element with the class "div-paragraphs". */
-  border: 10px solid #aab7c4; /* Adds a border around the div element with the class "div-paragraphs" with a width of 10 pixels and a color of rgb(175, 240, 253). */
+
   border-radius: 25px; /* Rounds the corners of the div element with the class "div-paragraphs" with a radius of 25 pixels. */
   width: 700px; /* Sets the width of the div element with the class "div-paragraphs" to 700 pixels. */
   position: relative; /* Relates to the positioning of the element to the middle. */
