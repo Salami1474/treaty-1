@@ -12,29 +12,27 @@ Date Last Modified: March 12th 2026.-->
     <title>Treaty 1</title>
     <link rel="stylesheet" href="stylesheets/styles.css" />
     <style>
-      span {
-        background-color: rgb(
-          /* Background color of the span elements, which are used to style the h2 headers. The rgb 236 96 84 colour is used. */
-          236,
-          96,
-          84
-        ); /* Background color of the span elements, which are used to style the h2 headers. */
-        color: rgb(252, 255, 255);
+      span.headings {
+        background-color: #3e8e90; /* Background color of the span elements, which are used to style the h2 headers. */
+        color: #ffffff;
         text-align: center; /* Aligns the text in the center of the span elements. */
         padding: 10px 15px; /* Adds space around the sides of the span elements. 10 px for top and bottom, 15 px for the sides. */
         border-radius: 15px; /* Rounds the corners of the span elements with a radius of 15 pixels. */
         font-family: serif; /* Sets the font family for the span elements to serif. */
         font-size: 25px; /* Sets the font size for the span elements to 25 pixels. */
         font-weight: bold; /* Makes the text in the span elements bold. */
-        border: 10px solid #e99191; /* Adds a border around the span elements with a width of 10 pixels and a color of #e99191. */
+        border: 5px solid #d3d3d3; /* Adds a border around the span elements with a width of 10 pixels and a color of #e99191. */
       }
       section {
         margin-bottom: 30px; /* Gives the bottom of the every section a margin space of 30 pixels at the bottom. */
       }
+      #treaty-date {
+        color: #c9a44c;
+      }
     </style>
   </head>
-  <!-- The id "gradient-box" is used to apply a background gradient to the entire webpage. -->
-  <body id="gradient-box">
+
+  <body>
     <header>
       <figure>
         <!-- This img element is used to display the treaty logo on the webpage. The ID of this image tag
@@ -71,7 +69,7 @@ Date Last Modified: March 12th 2026.-->
         <!-- This span element is used to style the heading for the content 
         in the introduction h2 header and all the other content in the h2 headers. -->
         <h2>
-          <span>Introduction to Treaty 1</span>
+          <span class="headings">Introduction to Treaty 1</span>
         </h2>
         <!-- This div element is used, with an attribute of class "div-paragraphs",
         to style the paragraphs under each h2 header. It groups the realted parapgraph elements together. -->
@@ -87,17 +85,18 @@ Date Last Modified: March 12th 2026.-->
           </p>
 
           <p>
-            Treaty No. 1 was negotiated in August 1871 by Canadian government
-            and representatives from the Ojibwe and Swampy Cree nations of
-            southern Manitoba. It was an agreement between the Crown and
-            Indigenous peoples about sharing of the land, which established a
-            formal relationship. The negotiations took 8 days.
+            Treaty No. 1 was negotiated in
+            <span id="treaty-date">August 1871</span> by Canadian government and
+            representatives from the Ojibwe and Swampy Cree nations of southern
+            Manitoba. It was an agreement between the Crown and Indigenous
+            peoples about sharing of the land, which established a formal
+            relationship. The negotiations took 8 days.
           </p>
         </div>
       </section>
       <section>
         <h2>
-          <span>Why was Treaty 1 Important?</span>
+          <span class="headings">Why was Treaty 1 Important?</span>
         </h2>
         <div class="div-paragraphs">
           <p>
@@ -120,7 +119,7 @@ Date Last Modified: March 12th 2026.-->
       </section>
       <section>
         <h2>
-          <span>Where Was Treaty 1 Signed?</span>
+          <span class="headings">Where Was Treaty 1 Signed?</span>
         </h2>
         <div class="div-paragraphs">
           <p>
@@ -140,7 +139,7 @@ Date Last Modified: March 12th 2026.-->
 
       <section>
         <h2>
-          <span>Conclusion</span>
+          <span class="headings">Conclusion</span>
         </h2>
         <div class="div-paragraphs">
           <p>
@@ -199,8 +198,6 @@ Date Last Modified: March 12th 2026.-->
         </figure>
       </section>
     </main>
-    <footer>
-      <p>&copy; 2026 Feranmi Adesanya. Treaty 1</p>
-    </footer>
+    <footer>&copy; 2026 Feranmi Adesanya. Treaty 1</footer>
   </body>
 </html>

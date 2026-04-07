@@ -1,5 +1,5 @@
 body {
-  background-color: #e4f9fa; /* Gives the body a background colour of #e4f9fa. */
+  background-color: #f5f5f5; /* Gives the body a background colour of #e4f9fa. */
   margin: 0; /* Removes the default margin from the body. */
   font-family:
     Arial, sans-serif; /* Sets the font family for the body to Arial, with a fallback to sans-serif. */
@@ -9,22 +9,22 @@ body {
   display: inline-block; /* Displays the treaty logo as an inline block element, allowing it to be styled and positioned. */
   justify-content: center; /* Places content in the center. */
   padding: 20px; /* Adds padding around the treaty logo. */
-  background-color: #82d3d7; /* Sets the background color of the treaty logo to #82d3d7. */
+  background-color: #1f3a5f; /* Sets the background color of the treaty logo to #82d3d7. */
   border-radius: 100px; /* Rounds the corners of the treaty logo with a radius of 100 pixels, giving it a circular appearance. */
-  border: 10px solid rgb(175, 240, 253);
+  border: 10px solid #3a5477;
   margin-bottom: 30px; /* Adds a margin space of 30 pixels at the bottom of the treaty logo. */
   align-items: center; /* Aligns items in the center of the treaty logo. */
 }
 
 h1 {
-  color: #191717; /* Sets the text color of h1 headers to #191717. */
+  color: #ffffff; /* Sets the text color of h1 headers to #191717. */
   text-align: center; /* Aligns the text of h1 headers to the center. */
-  background-color: #82d3d7; /* Sets the background color of h1 headers to #82d3d7. */
+  background-color: #1f3a5f; /* Sets the background color of h1 headers to #82d3d7. */
   padding: 10px; /* Adds padding around the text of h1 headers. */
-  border: 10px solid rgb(175, 240, 253); /* Adds a border around h1 headers with a width of 10 pixels and a color of rgb(175, 240, 253). */
+  border: 10px solid #3a5477; /* Adds a border around h1 headers with a width of 10 pixels and a color of rgb(175, 240, 253). */
   font-family:
     "Georgia", serif; /* Sets the font family for h1 headers to Georgia, with a fallback to serif. */
-  border-radius: 40px; /* Rounds the corners of h1 headers with a radius of 40 pixels. */
+  border-radius: 20px; /* Rounds the corners of h1 headers with a radius of 40 pixels. */
   margin-bottom: 20px; /* Adds a margin space of 20 pixels at the bottom of h1 headers. */
 }
 h2 {
@@ -37,9 +37,9 @@ p {
 }
 
 .div-paragraphs {
-  background-color: #7de4e1; /* Sets the background color of the div element with the class "div-paragraphs" to #7de4e1. */
-  padding: 20px; /* Adds padding around the content of the div element with the class "div-paragraphs". */
-  border: 10px solid rgb(175, 240, 253); /* Adds a border around the div element with the class "div-paragraphs" with a width of 10 pixels and a color of rgb(175, 240, 253). */
+  background-color: #d9e1e8; /* Sets the background color of the div element with the class "div-paragraphs" to #7de4e1. */
+  padding: 10px; /* Adds padding around the content of the div element with the class "div-paragraphs". */
+  border: 10px solid #aab7c4; /* Adds a border around the div element with the class "div-paragraphs" with a width of 10 pixels and a color of rgb(175, 240, 253). */
   border-radius: 25px; /* Rounds the corners of the div element with the class "div-paragraphs" with a radius of 25 pixels. */
   width: 700px; /* Sets the width of the div element with the class "div-paragraphs" to 700 pixels. */
   position: relative; /* Relates to the positioning of the element to the middle. */
@@ -47,50 +47,51 @@ p {
   transform: translateX(
     -50%
   ); /* Transforms the element by translating it horizontally by removing 50% of its own width, making it centered within its container. */
-  font-size: 15px; /* Sets the font size of the div element with the class "div-paragraphs" to 15 pixels. */
+  font-size: 20px; /* Sets the font size of the div element with the class "div-paragraphs" to 15 pixels. */
+  color: #2e2e2e;
   font-family:
     Georgia, serif; /* Sets the font family for the div element with the class "div-paragraphs" to Georgia, with a fallback to serif. */
 }
 
 .nav-links {
-  background-color: #69bcc0; /* Sets the background color of the class of nav links to #69bcc0. */
+  background-color: #1f3a5f; /* Sets the background color of the class of nav links to #69bcc0. */
   padding: 10px; /* Adds padding around the class of nav links. */
   display: flex; /* Transforms the element into a flexible layout system.. */
   justify-content: center; /* Makes the content of the class of nav links to the center. */
   gap: 30px; /* Adds a gap of 30 pixels between the items in the class of nav links horizontally. */
-  border: 10px solid #69bcc0; /* Adds a border around the class of nav links with a width of 10 pixels and a color of #69bcc0. */
-  color: #191717; /* Sets the text color of the class of nav links to #191717. */
+  border: 10px solid #3a5477; /* Adds a border around the class of nav links with a width of 10 pixels and a color of #69bcc0. */
+  color: #ffffff; /* Sets the text color of the class of nav links to #191717. */
   font-size: 18px; /* Sets the font size of the class of nav links to 18 pixels. */
   font-family:
     "Georgia", serif; /* Sets the font family for the class of nav links to Georgia, with a fallback to serif. */
   list-style: none; /* Removes the default list styling (bullets) from the class of nav links. */
   font-weight: bold; /* Sets the font weight of the class of nav links to bold, making the text appear thicker and bolder. */
   font-style: italic; /* Sets the font style of the class of nav links to italic, making the text appear slanted. */
-  border-radius: 100px; /* Rounds the corners of the class of nav links with a radius of 100 pixels, giving it a circular appearance. */
+  border-radius: 20px; /* Rounds the corners of the class of nav links with a radius of 100 pixels, giving it a circular appearance. */
 }
 nav a {
-  color: #191717; /* Sets the text color of anchor elements within the nav element to #191717. */
+  color: #ffffff; /* Sets the text color of anchor elements within the nav element to #191717. */
   text-decoration: none; /* Removes the default underline from anchor elements within the nav element. */
   padding: 10px 15px; /* Adds padding around the text of anchor elements within the nav element. 10 pixels for top and bottom, 15 pixels for the sides. */
   border-radius: 15px; /* Rounds the corners of anchor elements within the nav element with a radius of 15 pixels. */
-  background-color: #65baee; /* Sets the background color of anchor elements within the nav element to #65baee. */
+  background-color: #1f3a5f; /* Sets the background color of anchor elements within the nav element to #65baee. */
   transition: background-color 0.3s ease; /* Background colour 
   of the nav links transitions smoothly and easy in 0.3s */
 }
 nav a:hover {
-  background-color: rgb(
-    233,
-    69,
-    54
-  ); /* Changes the background color of anchor elements within the nav element to rgb(233, 69, 54) when hovered over. */
-  color: white; /* Changes the text color of anchor elements within the nav element to white when hovered over. */
+  background-color: #4fa3a5; /* Changes the background color of anchor elements within the nav element to #65baee when hovered over. */
+  color: rgb(
+    49,
+    58,
+    59
+  ); /* Changes the text color of anchor elements within the nav element to white when hovered over. */
   transition: ease-in-out 0.3s; /* Transition effect for when the user 
   hovers over the nav links. 0.3 second time rate with an easy transition. */
 
   padding: 20px 25px; /* Padding of the nav links were hovered. 20 px for top and bottom
   , 25 px for the sides. */
   border-radius: 20px; /* Rounds the corners of the nav links when hovered with a radius of 20 pixels. */
-  border: 7px solid rgb(253, 180, 175); /* Adds a border around the nav links when hovered with a width of 7 pixels and a color of rgb(253, 180, 175). */
+  border: 7px solid rgb(160, 211, 237); /* Adds a border around the nav links when hovered with a width of 7 pixels and a color of rgb(253, 180, 175). */
 }
 figure {
   text-align: center; /* Aligns the content of figure elements to the center. */
@@ -107,31 +108,23 @@ figcaption {
 }
 
 footer {
+  color: #f5f5f5; /* Sets the text color of the footer to white. */
   text-align: center; /* Aligns the text of the footer to the center. */
-  background-color: rgb(
-    236,
-    96,
-    84
-  ); /* Sets the background color of the footer to rgb(236, 96, 84). */
+  background-color: #1f3a5f; /* Sets the background color of the footer to rgb(236, 96, 84). */
   font-style: italic; /* Sets the font style of the footer to italic. */
   font-weight: bold; /* Sets the font weight of the footer to bold. */
-  font-size: 5px; /* Sets the font size of the footer to 5 pixels. */
-  border: 10px solid #e99191; /* Adds a border around the footer with a width of 10 pixels and a color of #e99191. */
+  border: 10px solid #3a5477; /* Adds a border around the footer with a width of 10 pixels and a color of #e99191. */
   border-radius: 30px; /* Rounds the corners of the footer with a radius of 30 pixels. */
-}
-#gradient-box {
-  background: linear-gradient(
-    135deg,
-    #69bcc0,
-    #d8d8d8
-  ); /* Sets the background of the element with the ID "gradient-box" to a linear gradient that transitions from #69bcc0 to #d8d8d8 at a 135-degree angle. */
+
+  font-size: 20px; /* Sets the font size of paragraphs to 20 pixels. */
+  padding: 10px;
 }
 
 #treaty-map {
   display: flex; /* Displays the treaty map as a flexible container, allowing for flexible layout and alignment of its content. */
   justify-content: center; /* Makes the content of the treaty map to the center, aligning it horizontally within its container. */
-  background-color: #7de4e1; /* Sets the background color of the treaty map to #7de4e1. */
-  border: 10px solid rgb(175, 240, 253); /* Adds a border around the treaty map with a width of 10 pixels and a color of rgb(175, 240, 253). */
+  background-color: #1f3a5f; /* Sets the background color of the treaty map to #7de4e1. */
+  border: 10px solid #3a5477; /* Adds a border around the treaty map with a width of 10 pixels and a color of rgb(175, 240, 253). */
   border-radius: 25px; /* Rounds the corners of the treaty map with a radius of 25 pixels. */
   padding: 20px; /* Adds padding around the content of the treaty map. */
   left: 50%; /* Positions the treaty map at the center of its container horizontally by moving it from the left by 50 percent.. */
@@ -145,12 +138,14 @@ footer {
 #treaty-medal-image {
   display: flex; /* Displays the treaty medal image as flexible container. */
   justify-content: center; /*Makes the content of the treaty map to the center, aligning it horizontally within its container.  */
-  background-color: #7de4e1; /* Changes background colour to #7d4e1. */
-  border: 10px solid rgb(175, 240, 253); /* Adds a border with a width of 10px and colour of what the colour is. */
+  background-color: #1f3a5f; /* Changes background colour to #1f3a5f. */
+  border: 10px solid #3a5477; /* Adds a border with a width of 10px and colour of what the colour is. */
   border-radius: 25px; /* Rounds the corners of the treaty map with a radius of 25 pixels. */
   padding: 20px; /* Adds space around the treaty medal image. */
-  left: 50%;/* Positions the treaty medal at the center of its container horizontally by moving it from the left by 50 percent.. */
-  transform: translateX(-50%);/*Adjusts the position of the treaty map to ensure it is centered by removing 50 percent from the left. */
+  left: 50%; /* Positions the treaty medal at the center of its container horizontally by moving it from the left by 50 percent.. */
+  transform: translateX(
+    -50%
+  ); /*Adjusts the position of the treaty map to ensure it is centered by removing 50 percent from the left. */
   width: 500px; /* Makes the width of the image 500px. */
   position: relative; /* The treaty medal image is positioned relative to its normal position in the document flow. */
 }
