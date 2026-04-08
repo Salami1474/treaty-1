@@ -2,10 +2,10 @@ html {
   font-size: 62.5%;
 }
 body {
-  background-color: #f5f5f5; /* Gives the body a background colour of #e4f9fa. */
+  background-color: #f5f5f5; /* Gives the body a background colour of #f5f5f5. */
   margin: 0; /* Removes the default margin from the body. */
   font-family:
-    Arial, sans-serif; /* Sets the font family for the body to Arial, with a fallback to sans-serif. */
+    Georgia, "Times New Roman", serif; /* Sets the font family for the body to Georgia,  */
   font-size: 1.6rem; /* Sets the font size for the body to 1.6rem. */
 }
 
@@ -21,14 +21,15 @@ body {
 }
 
 h1 {
-  color: #ffffff; /* Sets the text color of h1 headers to #191717. */
+  color: #ffffff; /* Sets the text color of h1 headers to #ffffff. */
   text-align: center; /* Aligns the text of h1 headers to the center. */
   background-color: #1f3a5f; /* Sets the background color of h1 headers to #82d3d7. */
   padding: 10px; /* Adds padding around the text of h1 headers. */
   border: 10px solid #3a5477; /* Adds a border around h1 headers with a width of 10 pixels and a color of rgb(175, 240, 253). */
   font-family:
-    "Georgia", serif; /* Sets the font family for h1 headers to Georgia, with a fallback to serif. */
+    "Georgia", "Times New Roman", Times, serif; /* Sets the font family for h1 headers to Georgia, with a fallback to serif. */
   border-radius: 20px; /* Rounds the corners of h1 headers with a radius of 40 pixels. */
+  font-size: 4rem; /* Sets the font size of h1 headers to 4rem. */
   margin-bottom: 20px; /* Adds a margin space of 20 pixels at the bottom of h1 headers. */
 }
 h2 {
@@ -51,10 +52,11 @@ p {
   transform: translateX(
     -50%
   ); /* Transforms the element by translating it horizontally by removing 50% of its own width, making it centered within its container. */
-  font-size: 20px; /* Sets the font size of the div element with the class "div-paragraphs" to 15 pixels. */
+  font-size: 2rem; /* Sets the font size of the div element with the class "div-paragraphs" to 15 pixels. */
   color: #2e2e2e;
   font-family:
-    Georgia, serif; /* Sets the font family for the div element with the class "div-paragraphs" to Georgia, with a fallback to serif. */
+    "Georgia", "Times New Roman", Times, serif; /* Sets the font family for the div element with the class "div-paragraphs" to Georgia, with a fallback to serif. */
+  line-height: 140%;
 }
 
 .nav-links {
@@ -65,9 +67,9 @@ p {
   gap: 30px; /* Adds a gap of 30 pixels between the items in the class of nav links horizontally. */
   border: 10px solid #3a5477; /* Adds a border around the class of nav links with a width of 10 pixels and a color of #69bcc0. */
   color: #ffffff; /* Sets the text color of the class of nav links to #191717. */
-  font-size: 18px; /* Sets the font size of the class of nav links to 18 pixels. */
+  font-size: 1.8rem; /* Sets the font size of the class of nav links to 18 pixels. */
   font-family:
-    "Georgia", serif; /* Sets the font family for the class of nav links to Georgia, with a fallback to serif. */
+    "Georgia", "Times New Roman", Times, serif; /* Sets the font family for the class of nav links to Georgia, with a fallback to serif. */
   list-style: none; /* Removes the default list styling (bullets) from the class of nav links. */
   font-weight: bold; /* Sets the font weight of the class of nav links to bold, making the text appear thicker and bolder. */
   font-style: italic; /* Sets the font style of the class of nav links to italic, making the text appear slanted. */
@@ -105,7 +107,7 @@ figure {
 
 figcaption {
   margin-top: 8px; /* Adds a margin space of 8 pixels at the top of figcaption elements, creating space between the caption and the image. */
-  font-size: 15px; /* Sets the font size of figcaption elements to 15 pixels, making the caption text smaller than the main content. */
+  font-size: 1.5rem; /* Sets the font size of figcaption elements to 15 pixels, making the caption text smaller than the main content. */
   font-style: italic; /* Sets the font style of figcaption elements to italic, making the caption text appear slanted. */
   font-weight: bold; /* Sets the font weight of figcaption elements to bold, making the caption text appear thicker and bolder. */
   color: #444; /* Sets the text color of figcaption elements to #444, giving it a dark gray color that contrasts with the background. */
@@ -120,7 +122,7 @@ footer {
   border: 10px solid #3a5477; /* Adds a border around the footer with a width of 10 pixels and a color of #e99191. */
   border-radius: 30px; /* Rounds the corners of the footer with a radius of 30 pixels. */
 
-  font-size: 20px; /* Sets the font size of paragraphs to 20 pixels. */
+  font-size: 2rem; /* Sets the font size of paragraphs to 20 pixels. */
   padding: 10px;
 }
 
