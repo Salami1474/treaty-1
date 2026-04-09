@@ -35,6 +35,7 @@ h1 {
 h2 {
   text-align: center; /* Aligns the text of h2 headers to the center. */
 }
+
 p {
   color: black; /* Sets the text color of paragraphs to black. */
   font-size: 20px; /* Sets the font size of paragraphs to 20 pixels. */
@@ -57,6 +58,7 @@ p {
   font-family:
     "Georgia", "Times New Roman", Times, serif; /* Sets the font family for the div element with the class "div-paragraphs" to Georgia, with a fallback to serif. */
   line-height: 140%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 .nav-links {
@@ -155,14 +157,29 @@ footer {
   width: 500px; /* Makes the width of the image 500px. */
   position: relative; /* The treaty medal image is positioned relative to its normal position in the document flow. */
 }
-span.headings {
+span.h2headings {
   background-color: #3e8e90; /* Background color of the span elements, which are used to style the h2 headers. */
   color: #ffffff;
   text-align: center; /* Aligns the text in the center of the span elements. */
   padding: 10px 15px; /* Adds space around the sides of the span elements. 10 px for top and bottom, 15 px for the sides. */
   border-radius: 15px; /* Rounds the corners of the span elements with a radius of 15 pixels. */
   font-family: serif; /* Sets the font family for the span elements to serif. */
-  font-size: 2.5rem; /* Sets the font size for the span elements to 25 pixels. */
+  font-size: 2.8rem; /* Sets the font size for the span elements to 25 pixels. */
   font-weight: bold; /* Makes the text in the span elements bold. */
   border: 5px solid #d3d3d3; /* Adds a border around the span elements with a width of 10 pixels and a color of #e99191. */
+}
+
+span.h3headings {
+  background-color: #3e8e90; /* Background color of the span elements, which are used to style the h2 headers. */
+  color: #ffffff;
+  text-align: center; /* Aligns the text in the center of the span elements. */
+  padding: 10px 15px; /* Adds space around the sides of the span elements. 10 px for top and bottom, 15 px for the sides. */
+  border-radius: 15px; /* Rounds the corners of the span elements with a radius of 15 pixels. */
+  font-family: serif; /* Sets the font family for the span elements to serif. */
+  font-size: 2rem; /* Sets the font size for the span elements to 25 pixels. */
+  font-weight: bold; /* Makes the text in the span elements bold. */
+  border: 5px solid #d3d3d3; /* Adds a border around the span elements with a width of 10 pixels and a color of #e99191. */
+}
+h3 {
+  text-align: center;
 }
