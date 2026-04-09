@@ -157,7 +157,7 @@ footer {
   width: 500px; /* Makes the width of the image 500px. */
   position: relative; /* The treaty medal image is positioned relative to its normal position in the document flow. */
 }
-span.h2headings {
+.h2headings {
   background-color: #3e8e90; /* Background color of the span elements, which are used to style the h2 headers. */
   color: #ffffff;
   text-align: center; /* Aligns the text in the center of the span elements. */
@@ -167,6 +167,10 @@ span.h2headings {
   font-size: 2.8rem; /* Sets the font size for the span elements to 25 pixels. */
   font-weight: bold; /* Makes the text in the span elements bold. */
   border: 5px solid #d3d3d3; /* Adds a border around the span elements with a width of 10 pixels and a color of #e99191. */
+  width: 50%;
+  align-items: center;
+  display: inline-block;
+  margin: 0 auto;
 }
 
 span.h3headings {
