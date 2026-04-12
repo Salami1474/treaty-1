@@ -1,189 +1,331 @@
 html {
   font-size: 62.5%;
+  /* 
+    Sets the base font size of the entire webpage.
+    62.5% of the default 16px = 10px, which makes rem units easier to calculate.
+     Example: 1.6rem = 16px, 2rem = 20px. */
 }
+
 body {
-  background-color: #f5f5f5; /* Gives the body a background colour of #f5f5f5. */
-  margin: 0; /* Removes the default margin from the body. */
-  font-family:
-    Georgia, "Times New Roman", serif; /* Sets the font family for the body to Georgia,  */
-  font-size: 1.6rem; /* Sets the font size for the body to 1.6rem. */
+  background-color: #f5f5f5;
+  /* Sets the background color of the entire page (a very light gray). */
+
+  margin: 0;
+  /* Removes the browser’s default outer spacing around the page. */
+
+  font-family: Georgia, "Times New Roman", serif;
+  /* Defines the font style. If Georgia isn’t available, it falls back to Times New Roman, then any serif font. */
+
+  font-size: 1.6rem;
+  /* Sets the default text size for the page (1.6rem = 16px). */
 }
 
 #treaty-logo {
-  display: inline-block; /* Displays the treaty logo as an inline block element, allowing it to be styled and positioned. */
-  justify-content: center; /* Places content in the center. */
-  padding: 20px; /* Adds padding around the treaty logo. */
-  background-color: #1f3a5f; /* Sets the background color of the treaty logo to #82d3d7. */
-  border-radius: 100px; /* Rounds the corners of the treaty logo with a radius of 100 pixels, giving it a circular appearance. */
+  display: inline-block;
+  /* Makes the element behave like text (inline) but allows width, height, padding, etc. */
 
-  margin-bottom: 30px; /* Adds a margin space of 30 pixels at the bottom of the treaty logo. */
-  align-items: center; /* Aligns items in the center of the treaty logo. */
+  justify-content: center;
+  /* Horizontally centers content INSIDE the element.
+     Only works if display is flex (so here it has no effect). */
+
+  padding: 20px;
+  /* Adds 20px of space inside the element on all sides (top, right, bottom, left). */
+
+  background-color: #1f3a5f;
+  /* Sets a dark blue background behind the logo. */
+
+  border-radius: 100px;
+  /* Rounds the corners heavily, making the element look circular or pill-shaped. */
+
+  margin-bottom: 30px;
+  /* Adds space below the element, separating it from content underneath. */
+
+  align-items: center;
+  /* Vertically centers content inside the element.
+     Only works with flexbox, so it does nothing here. */
 }
 
 h1 {
-  color: #ffffff; /* Sets the text color of h1 headers to #ffffff. */
-  text-align: center; /* Aligns the text of h1 headers to the center. */
-  background-color: #1f3a5f; /* Sets the background color of h1 headers to #82d3d7. */
-  padding: 10px; /* Adds padding around the text of h1 headers. */
-  border: 10px solid #3a5477; /* Adds a border around h1 headers with a width of 10 pixels and a color of rgb(175, 240, 253). */
-  font-family:
-    "Georgia", "Times New Roman", Times, serif; /* Sets the font family for h1 headers to Georgia, with a fallback to serif. */
-  border-radius: 20px; /* Rounds the corners of h1 headers with a radius of 40 pixels. */
-  font-size: 4rem; /* Sets the font size of h1 headers to 4rem. */
-  margin-bottom: 20px; /* Adds a margin space of 20 pixels at the bottom of h1 headers. */
+  color: #ffffff;
+  /* Sets the text color to white. */
+
+  text-align: center;
+  /* Centers the text horizontally inside the heading. */
+
+  background-color: #1f3a5f;
+  /* Adds a dark blue background behind the heading text. */
+
+  padding: 10px;
+  /* Creates space between the text and the edges of the background. */
+
+  border: 10px solid #3a5477;
+  /* Adds a thick border (10px), solid style, with a slightly lighter blue color. */
+
+  font-family: "Georgia", "Times New Roman", Times, serif;
+  /* Sets the font for the heading with fallback options. */
+
+  border-radius: 20px;
+  /* Rounds the corners of the heading box slightly. */
+
+  font-size: 4rem;
+  /* Makes the text large (4rem = 40px). */
+
+  margin-bottom: 20px;
+  /* Adds space below the heading to separate it from the next element. */
 }
+
 h2 {
-  text-align: center; /* Aligns the text of h2 headers to the center. */
+  text-align: center;
+  /* Centers all h2 text horizontally within its container. */
 }
 
 p {
-  color: black; /* Sets the text color of paragraphs to black. */
-  font-size: 20px; /* Sets the font size of paragraphs to 20 pixels. */
-  padding: 10px; /* Adds padding around the text of paragraphs. */
+  color: black;
+  /* Sets paragraph text color to black. */
+
+  font-size: 20px;
+  /* Sets the paragraph text size to 20px. */
+
+  padding: 10px;
+  /* Adds space inside the paragraph box (around the text). */
 }
 
 .div-paragraphs {
-  background-color: #d9e1e8; /* Sets the background color of the div element with the class "div-paragraphs" to #7de4e1. */
-  padding: 10px; /* Adds padding around the content of the div element with the class "div-paragraphs". */
+  background-color: #d9e1e8;
+  /* Gives the section a light gray-blue background. */
 
-  border-radius: 25px; /* Rounds the corners of the div element with the class "div-paragraphs" with a radius of 25 pixels. */
-  width: 700px; /* Sets the width of the div element with the class "div-paragraphs" to 700 pixels. */
-  position: relative; /* Relates to the positioning of the element to the middle. */
-  left: 50%; /* Positions the element away from the left of its container. */
-  transform: translateX(
-    -50%
-  ); /* Transforms the element by translating it horizontally by removing 50% of its own width, making it centered within its container. */
-  font-size: 2rem; /* Sets the font size of the div element with the class "div-paragraphs" to 15 pixels. */
+  padding: 10px;
+  /* Adds space inside the box so text isn’t touching edges. */
+
+  border-radius: 25px;
+  /* Smoothly rounds the corners of the box. */
+
+  width: 700px;
+  /* Fixes the width of the box to 700px (doesn’t change with screen size). */
+
+  position: relative;
+  /* Allows the element to be moved relative to its normal position. */
+
+  left: 50%;
+  /* Moves the element 50% from the left side of its container. */
+
+  transform: translateX(-50%);
+  /* Pulls the element back left by 50% of its own width.
+     This combination perfectly centers the element horizontally. */
+
+  font-size: 2rem;
+  /* Sets text inside to 2rem (20px). */
+
   color: #2e2e2e;
-  font-family:
-    "Georgia", "Times New Roman", Times, serif; /* Sets the font family for the div element with the class "div-paragraphs" to Georgia, with a fallback to serif. */
+  /* Sets a dark gray text color (softer than pure black). */
+
+  font-family: "Georgia", "Times New Roman", Times, serif;
+  /* Sets font style for this section. */
+
   line-height: 140%;
+  /* Controls spacing between lines (makes text easier to read). */
+
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  /* Adds a soft shadow: 0 horizontal, 5px vertical, 10px blur, light transparency. */
+
+  margin-bottom: 20px;
+  /* Adds space below the box. */
 }
 
-.nav-links {
-  background-color: #1f3a5f; /* Sets the background color of the class of nav links to #69bcc0. */
-  padding: 10px; /* Adds padding around the class of nav links. */
-  display: flex; /* Transforms the element into a flexible layout system.. */
-  justify-content: center; /* Makes the content of the class of nav links to the center. */
-  gap: 30px; /* Adds a gap of 30 pixels between the items in the class of nav links horizontally. */
-  border: 10px solid #3a5477; /* Adds a border around the class of nav links with a width of 10 pixels and a color of #69bcc0. */
-  color: #ffffff; /* Sets the text color of the class of nav links to #191717. */
-  font-size: 1.8rem; /* Sets the font size of the class of nav links to 18 pixels. */
-  font-family:
-    "Georgia", "Times New Roman", Times, serif; /* Sets the font family for the class of nav links to Georgia, with a fallback to serif. */
-  list-style: none; /* Removes the default list styling (bullets) from the class of nav links. */
-  font-weight: bold; /* Sets the font weight of the class of nav links to bold, making the text appear thicker and bolder. */
-  font-style: italic; /* Sets the font style of the class of nav links to italic, making the text appear slanted. */
-  border-radius: 20px; /* Rounds the corners of the class of nav links with a radius of 100 pixels, giving it a circular appearance. */
+#nav-links {
+  background-color: #1f3a5f;
+  /* Dark blue background for the navigation bar. */
+
+  padding: 10px;
+  /* Space inside the nav container. */
+
+  display: flex;
+  /* Enables flexbox layout, allowing easy alignment of child elements. */
+
+  justify-content: center;
+  /* Centers nav items horizontally in the container. */
+
+  gap: 30px;
+  /* Adds 30px space between each nav item. */
+
+  border: 10px solid #3a5477;
+  /* Thick border around the nav bar. */
+
+  color: #ffffff;
+  /* Sets default text color inside nav. */
+
+  font-size: 1.8rem;
+  /* Sets text size (18px). */
+
+  font-family: "Georgia", "Times New Roman", Times, serif;
+  /* Sets font style. */
+
+  list-style: none;
+  /* Removes bullet points if this is a list. */
+
+  font-weight: bold;
+  /* Makes text bold. */
+
+  font-style: italic;
+  /* Makes text italic (slanted). */
+
+  border-radius: 20px;
+  /* Rounds corners of nav bar. */
 }
+
 nav a {
-  color: #ffffff; /* Sets the text color of anchor elements within the nav element to #191717. */
-  text-decoration: none; /* Removes the default underline from anchor elements within the nav element. */
-  padding: 10px 15px; /* Adds padding around the text of anchor elements within the nav element. 10 pixels for top and bottom, 15 pixels for the sides. */
-  border-radius: 15px; /* Rounds the corners of anchor elements within the nav element with a radius of 15 pixels. */
-  background-color: #1f3a5f; /* Sets the background color of anchor elements within the nav element to #65baee. */
-  transition: background-color 0.3s ease; /* Background colour 
-  of the nav links transitions smoothly and easy in 0.3s */
-}
-nav a:hover {
-  background-color: #4fa3a5; /* Changes the background color of anchor elements within the nav element to #65baee when hovered over. */
-  color: rgb(
-    49,
-    58,
-    59
-  ); /* Changes the text color of anchor elements within the nav element to white when hovered over. */
-  transition: ease-in-out 0.3s; /* Transition effect for when the user 
-  hovers over the nav links. 0.3 second time rate with an easy transition. */
+  color: #ffffff;
+  /* Sets link text color. */
 
-  padding: 20px 25px; /* Padding of the nav links were hovered. 20 px for top and bottom
-  , 25 px for the sides. */
-  border-radius: 20px; /* Rounds the corners of the nav links when hovered with a radius of 20 pixels. */
-  border: 7px solid rgb(160, 211, 237); /* Adds a border around the nav links when hovered with a width of 7 pixels and a color of rgb(253, 180, 175). */
+  text-decoration: none;
+  /* Removes underline from links. */
+
+  padding: 10px 15px;
+  /* Adds space inside each link (top/bottom = 10px, sides = 15px). */
+
+  border-radius: 15px;
+  /* Rounds the corners of links. */
+
+  background-color: #1f3a5f;
+  /* Gives links a background color. */
+
+  transition: background-color 0.3s ease;
+  /* Smoothly changes background color over 0.3 seconds when hovered. */
 }
+
+nav a:hover {
+  background-color: #4fa3a5;
+  /* Changes background color when the mouse is over the link. */
+
+  color: rgb(49, 58, 59);
+  /* Changes text color on hover. */
+
+  transition: ease-in-out 0.3s;
+  /* Smooth animation effect for hover changes. */
+
+  padding: 20px 25px;
+  /* Increases size on hover, making it feel interactive. */
+
+  border-radius: 20px;
+  /* Slightly more rounded corners on hover. */
+
+  border: 7px solid rgb(160, 211, 237);
+  /* Adds a border when hovering. */
+}
+
 figure {
-  text-align: center; /* Aligns the content of figure elements to the center. */
-  justify-content: center; /* Justifies the content of figure elements to the center. */
-  width: auto; /* Sets the width of figure elements to auto, allowing them to adjust based on their content. */
+  text-align: center;
+  /* Centers content like images and captions. */
+
+  justify-content: center;
+  /* Only works in flexbox (no effect here). */
+
+  width: auto;
+  /* Width adjusts based on content size. */
 }
 
 figcaption {
-  margin-top: 8px; /* Adds a margin space of 8 pixels at the top of figcaption elements, creating space between the caption and the image. */
-  font-size: 1.5rem; /* Sets the font size of figcaption elements to 15 pixels, making the caption text smaller than the main content. */
-  font-style: italic; /* Sets the font style of figcaption elements to italic, making the caption text appear slanted. */
-  font-weight: bold; /* Sets the font weight of figcaption elements to bold, making the caption text appear thicker and bolder. */
-  color: #444; /* Sets the text color of figcaption elements to #444, giving it a dark gray color that contrasts with the background. */
+  margin-top: 8px;
+  /* Adds space above the caption. */
+
+  font-size: 1.5rem;
+  /* Smaller text size (15px). */
+
+  font-style: italic;
+  /* Makes caption text slanted. */
+
+  font-weight: bold;
+  /* Makes caption text bold. */
+
+  color: #444;
+  /* Dark gray text color. */
 }
 
 footer {
-  color: #f5f5f5; /* Sets the text color of the footer to white. */
-  text-align: center; /* Aligns the text of the footer to the center. */
-  background-color: #1f3a5f; /* Sets the background color of the footer to rgb(236, 96, 84). */
-  font-style: italic; /* Sets the font style of the footer to italic. */
-  font-weight: bold; /* Sets the font weight of the footer to bold. */
-  border: 10px solid #3a5477; /* Adds a border around the footer with a width of 10 pixels and a color of #e99191. */
-  border-radius: 30px; /* Rounds the corners of the footer with a radius of 30 pixels. */
+  color: #f5f5f5;
+  /* Light text color for contrast. */
 
-  font-size: 2rem; /* Sets the font size of paragraphs to 20 pixels. */
+  text-align: center;
+  /* Centers footer text. */
+
+  background-color: #1f3a5f;
+  /* Dark background. */
+
+  font-style: italic;
+  /* Slanted text. */
+
+  font-weight: bold;
+  /* Bold text. */
+
+  border: 10px solid #3a5477;
+  /* Border around footer. */
+
+  border-radius: 30px;
+  /* Rounded corners. */
+
+  font-size: 2rem;
+  /* Text size (20px). */
+
   padding: 10px;
+  /* Space inside the footer. */
 }
 
-#treaty-map {
-  display: flex; /* Displays the treaty map as a flexible container, allowing for flexible layout and alignment of its content. */
-  justify-content: center; /* Makes the content of the treaty map to the center, aligning it horizontally within its container. */
-  background-color: #1f3a5f; /* Sets the background color of the treaty map to #7de4e1. */
-  border: 10px solid #3a5477; /* Adds a border around the treaty map with a width of 10 pixels and a color of rgb(175, 240, 253). */
-  border-radius: 25px; /* Rounds the corners of the treaty map with a radius of 25 pixels. */
-  padding: 20px; /* Adds padding around the content of the treaty map. */
-  left: 50%; /* Positions the treaty map at the center of its container horizontally by moving it from the left by 50 percent.. */
-  transform: translateX(
-    -50%
-  ); /* Adjusts the position of the treaty map to ensure it is centered by removing 50 percent from the left. */
-  width: 600px; /* Sets the width of the treaty map to 600 pixels. */
-  position: relative; /* The treaty map image is positioned relative to its normal position in the document flow. */
-}
-
-#treaty-medal-image {
-  display: flex; /* Displays the treaty medal image as flexible container. */
-  justify-content: center; /*Makes the content of the treaty map to the center, aligning it horizontally within its container.  */
-  background-color: #1f3a5f; /* Changes background colour to #1f3a5f. */
-  border: 10px solid #3a5477; /* Adds a border with a width of 10px and colour of what the colour is. */
-  border-radius: 25px; /* Rounds the corners of the treaty map with a radius of 25 pixels. */
-  padding: 20px; /* Adds space around the treaty medal image. */
-  left: 50%; /* Positions the treaty medal at the center of its container horizontally by moving it from the left by 50 percent.. */
-  transform: translateX(
-    -50%
-  ); /*Adjusts the position of the treaty map to ensure it is centered by removing 50 percent from the left. */
-  width: 500px; /* Makes the width of the image 500px. */
-  position: relative; /* The treaty medal image is positioned relative to its normal position in the document flow. */
-}
 .h2headings {
-  background-color: #3e8e90; /* Background color of the span elements, which are used to style the h2 headers. */
+  background-color: #3e8e90;
+  /* Teal background for styled headings. */
   color: #ffffff;
-  text-align: center; /* Aligns the text in the center of the span elements. */
-  padding: 10px 15px; /* Adds space around the sides of the span elements. 10 px for top and bottom, 15 px for the sides. */
-  border-radius: 15px; /* Rounds the corners of the span elements with a radius of 15 pixels. */
-  font-family: serif; /* Sets the font family for the span elements to serif. */
-  font-size: 2.8rem; /* Sets the font size for the span elements to 25 pixels. */
-  font-weight: bold; /* Makes the text in the span elements bold. */
-  border: 5px solid #d3d3d3; /* Adds a border around the span elements with a width of 10 pixels and a color of #e99191. */
-  width: 50%;
-  align-items: center;
+  /* White text color. */
+  text-align: center;
+  /* Centers text. */
+  padding: 10px 15px;
+  /* Space inside the element. */
+  border-radius: 15px;
+  /* Rounded corners. */
+  font-family: serif;
+  /* Uses a serif font style. */
+  font-size: 2.8rem;
+  /* Large heading size. */
+  font-weight: bold;
+  /* Bold text. */
+  border: 5px solid #d3d3d3;
+  /* Light gray border. */
+  display: inline-block;
+  /* Allows width and centering while staying inline. */
+  margin: 0 auto;
+  /* Helps center the element horizontally. */
+  width: fit-content;
+  /* Shrinks width to match content size. */
+  position: relative;
+  /* Enables positioning adjustments. */
+  left: 50%;
+  /* Moves element halfway across container. */
+  transform: translateX(-50%);
+  /* Pulls it back to perfectly center it. */
+}
+
+.h3headings {
+  background-color: #3e8e90;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 15px;
+  border-radius: 15px;
+  font-family: serif;
+  font-size: 2rem;
+  font-weight: bold;
+
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  /* Same centering trick as above. */
+
   display: inline-block;
   margin: 0 auto;
+  width: fit-content;
+
+  border: 5px solid #d3d3d3;
 }
 
-span.h3headings {
-  background-color: #3e8e90; /* Background color of the span elements, which are used to style the h2 headers. */
-  color: #ffffff;
-  text-align: center; /* Aligns the text in the center of the span elements. */
-  padding: 10px 15px; /* Adds space around the sides of the span elements. 10 px for top and bottom, 15 px for the sides. */
-  border-radius: 15px; /* Rounds the corners of the span elements with a radius of 15 pixels. */
-  font-family: serif; /* Sets the font family for the span elements to serif. */
-  font-size: 2rem; /* Sets the font size for the span elements to 25 pixels. */
-  font-weight: bold; /* Makes the text in the span elements bold. */
-  border: 5px solid #d3d3d3; /* Adds a border around the span elements with a width of 10 pixels and a color of #e99191. */
-}
 h3 {
   text-align: center;
+  /* Centers all h3 text. */
 }

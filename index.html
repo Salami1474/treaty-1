@@ -17,8 +17,37 @@
       section {
         margin-bottom: 30px; /* Gives the bottom of the every section a margin space of 30 pixels at the bottom. */
       }
-      #treaty-date {
+      span#treaty-date {
         color: #c9a44c;
+      }
+      #treaty-map {
+        display: flex; /* Displays the treaty map as a flexible container, allowing for flexible layout and alignment of its content. */
+        justify-content: center; /* Makes the content of the treaty map to the center, aligning it horizontally within its container. */
+        background-color: #1f3a5f; /* Sets the background color of the treaty map to #7de4e1. */
+        border: 10px solid #3a5477; /* Adds a border around the treaty map with a width of 10 pixels and a color of rgb(175, 240, 253). */
+        border-radius: 25px; /* Rounds the corners of the treaty map with a radius of 25 pixels. */
+        padding: 20px; /* Adds padding around the content of the treaty map. */
+        left: 50%; /* Positions the treaty map at the center of its container horizontally by moving it from the left by 50 percent.. */
+        transform: translateX(
+          -50%
+        ); /* Adjusts the position of the treaty map to ensure it is centered by removing 50 percent from the left. */
+        width: 600px; /* Sets the width of the treaty map to 600 pixels. */
+        position: relative; /* The treaty map image is positioned relative to its normal position in the document flow. */
+      }
+
+      #treaty-medal-image {
+        display: flex; /* Displays the treaty medal image as flexible container. */
+        justify-content: center; /*Makes the content of the treaty map to the center, aligning it horizontally within its container.  */
+        background-color: #1f3a5f; /* Changes background colour to #1f3a5f. */
+        border: 10px solid #3a5477; /* Adds a border with a width of 10px and colour of what the colour is. */
+        border-radius: 25px; /* Rounds the corners of the treaty map with a radius of 25 pixels. */
+        padding: 20px; /* Adds space around the treaty medal image. */
+        left: 50%; /* Positions the treaty medal at the center of its container horizontally by moving it from the left by 50 percent.. */
+        transform: translateX(
+          -50%
+        ); /*Adjusts the position of the treaty map to ensure it is centered by removing 50 percent from the left. */
+        width: 500px; /* Makes the width of the image 500px. */
+        position: relative; /* The treaty medal image is positioned relative to its normal position in the document flow. */
       }
     </style>
   </head>
@@ -26,22 +55,26 @@
   <body>
     <header>
       <figure>
-        <!-- This img element is used to display the treaty logo on the webpage. The ID of this image tag
-        is "treaty-logo" which is used to style the image tag and is used to identify the tag. -->
+        <!-- 
+          This img element is used to display the treaty logo on the webpage. The ID of this image tag
+          is "treaty-logo" which is used to style the image tag and is used to identify the tag. 
+        -->
         <img
           id="treaty-logo"
           src="images/treaty-1 logo (2).gif"
-          alt="An-Image-of-the-Treaty-one-logo"
+          alt="An Image of the Treaty 1 logo"
           width="600"
           height="300" />
         <figcaption style="color: #000000">Treaty 1 Logo</figcaption>
       </figure>
 
       <nav>
-        <!-- These navigation links allow users to navigate between different
-        sections of the website. The links are being styled using the class 
-        attribute with a name of "nav-links". -->
-        <ul class="nav-links">
+        <!-- 
+          These navigation links allow users to navigate between different
+          sections of the website. The links are being styled using the class 
+          attribute with a name of "nav-links". 
+        -->
+        <ul id="nav-links">
           <li class="nav-item">
             <a href="index.html">Home</a>
           </li>
@@ -49,22 +82,30 @@
             <a href="people-involved.html">People Involved</a>
           </li>
           <li class="nav-item">
-            <a href="what-was-promised.html">What Was Promised in the Treaty</a>
+            <a href="what-was-promised.html"
+              >What Was Promised in the Treaty and more info.</a
+            >
           </li>
         </ul>
       </nav>
       <h1>Treaty 1</h1>
     </header>
 
-    <!-- This is the main content area of the webpage. -->
+    <!-- 
+        This is the main content area of the webpage.   
+    -->
 
     <main>
       <section>
-        <!-- This span element is used to style the heading for the content 
-        in the introduction h2 header and all the other content in the h2 headers. -->
+        <!-- 
+          This span element is used to style the heading for the content 
+          in the introduction h2 header and all the other content in the h2 headers. 
+        -->
         <h2 class="h2headings">Introduction to Treaty 1</h2>
-        <!-- This div element is used, with an attribute of class "div-paragraphs",
-        to style the paragraphs under each h2 header. It groups the realted parapgraph elements together. -->
+        <!-- 
+          This div element is used, with an attribute of class "div-paragraphs",
+          to style the paragraphs under each h2 header. It groups the realted parapgraph elements together. 
+        -->
         <div class="div-paragraphs">
           <p>
             Treaty 1, also known as the Stone Fort Treaty, was the first of the
@@ -142,8 +183,9 @@
           </p>
         </div>
       </section>
-      <!-- This section is used to display the treaty medal image and its description. It has an inline styling to give it a margin space of 60 pixels at the bottom.
-      It is inline because the pixel size varies from the other sections.
+      <!-- 
+        This section is used to display the treaty medal image and its description. It has an inline styling to give it a margin space of 60 pixels at the bottom.
+        It is inline because the pixel size varies from the other sections.
       -->
       <section style="margin-bottom: 60px">
         <figure>
@@ -156,8 +198,10 @@
             width="400"
             height="250" />
 
-          <!-- This figcaption element is used to provide a description for the 
-        treaty medal image. -->
+          <!-- 
+            This figcaption element is used to provide a description for the 
+            treaty medal image. 
+          -->
           <figcaption>
             A picture of the treaty medal that was given to the Indigenous
             people as a representation of Treaty 1
@@ -167,17 +211,21 @@
 
       <section>
         <figure>
-          <!-- This img tag has an ID of "treaty-map"  as it displays the treaty map image and the ID is used
-          to style the img tag.-->
+          <!-- 
+            This img tag has an ID of "treaty-map"  as it displays the treaty map image and the ID is used
+            to style the img tag.
+          -->
           <img
             id="treaty-map"
             src="images/treaty-1-map.jpg"
-            alt="A-map-of-where-Treaty-1-was-Located"
+            alt="A map of where Treaty 1 was Located"
             width="550"
             height="500" />
 
-          <!-- This figcaption element is used to provide a description for the 
-        treaty map image. -->
+          <!-- 
+            This figcaption element is used to provide a description for the 
+            treaty map image. 
+          -->
           <figcaption>
             A map of where Treaty 1 was located, with other treaties
           </figcaption>
