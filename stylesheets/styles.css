@@ -5,7 +5,8 @@
   I wanted to use this colour family to represent the trust and loyalty that the 
   Indigenous people had in the government when they signed Treaty 1, and the wisdom 
   that they had to negotiate the treaty. The way I used the colours was to make implement
-  a more professional mentaliy to this website.
+  a more professional mentaliy to this website. The gold/yellow colour accents were used
+  a little bit to highlight important information and create a sense of prestige and value.
 */
 
 html {
@@ -303,6 +304,7 @@ footer {
   /* Allows width and centering while staying inline. */
   margin: 0 auto;
   /* Helps center the element horizontally. */
+  width: -webkit-fit-content;
   width: fit-content;
   /* Shrinks width to match content size. */
   position: relative;
@@ -315,24 +317,40 @@ footer {
 
 .h3headings {
   background-color: #3e8e90;
+  /* Teal background for styled headings. */
   color: #ffffff;
+  /* White colour for the text. */
   text-align: center;
+  /* Centers the text. */
   padding: 10px 15px;
+  /* Space inside the element. */
   border-radius: 15px;
+  /* Rounds corners of the element. */
   font-family: serif;
+  /* Uses a serif font style. */
   font-size: 2rem;
+  /* Large heading size of 2rem. */
   font-weight: bold;
+  /* Makes the text bolded. */
 
   position: relative;
+  /* Positions the element relative to its normal position. */
   left: 50%;
+  /* Moves the element halfway across the container. */
   transform: translateX(-50%);
   /* Same centering trick as above. */
 
   display: inline-block;
+  /* Allows width and centering while staying inline. */
   margin: 0 auto;
+  /* Helps center the element horizontally. */
+  width: -webkit-fit-content;
+  /* Shrinks width to match content size. */
   width: fit-content;
+  /* Shrinks width to match content size. */
 
   border: 5px solid #d3d3d3;
+  /* Adds a light gray border. */
 }
 
 h3 {
