@@ -8,6 +8,9 @@
   a more professional mentaliy to this website. The gold/yellow colour accents were used
   a little bit to highlight important information and create a sense of prestige and value.
 */
+* {
+  line-height: 140%;
+}
 
 html {
   font-size: 62.5%;
