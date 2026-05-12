@@ -3,7 +3,7 @@
   Course: Web Development II
   Teacher: Mr. Hardman
   School: Pembina Trails Collegiate/Pembina Trails Early College
-  Date Last Modified: May 7th 2026.
+  Date Last Modified: May 11th 2026.
 -->
 <!doctype html>
 <html lang="en">
@@ -26,6 +26,31 @@
           This style rule applies a bold font weight to any span element with the class "bold", 
           making the text within those spans stand out for emphasis.
         */
+      }
+      table {
+        width: 90%;
+        margin: auto;
+        border-collapse: collapse;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 40px;
+        border-radius: 15px;
+      }
+
+      th,
+      td {
+        border: 1px solid #999;
+        padding: 20px;
+        text-align: left;
+      }
+
+      th {
+        background-color: #3e8e90;
+        color: white;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
       }
     </style>
   </head>
@@ -62,6 +87,91 @@
       <h1>People Involved in Treaty 1</h1>
     </header>
     <main>
+      <section>
+        <h2 class="h2headings">Communities Included in Treaty 1</h2>
+        <div class="div-paragraphs">
+          <table>
+            <tr>
+              <th>Community / First Nation</th>
+              <th>Nation / Ethnic Affiliation</th>
+            </tr>
+
+            <tr>
+              <td style="font-weight: bold">Brokenhead Ojibway Nation</td>
+              <td>Anishinaabe (Ojibwe)</td>
+            </tr>
+
+            <tr>
+              <td style="font-weight: bold">Long Plain First Nation</td>
+              <td>Anishinaabe (Ojibwe)</td>
+            </tr>
+
+            <tr>
+              <td style="font-weight: bold">Peguis First Nation</td>
+              <td>Anishinaabe (Ojibwe)</td>
+            </tr>
+
+            <tr>
+              <td style="font-weight: bold">
+                Roseau River Anishinabe First Nation
+              </td>
+              <td>Anishinaabe (Ojibwe)</td>
+            </tr>
+
+            <tr>
+              <td style="font-weight: bold">Sagkeeng First Nation</td>
+              <td>Anishinaabe (Ojibwe)</td>
+            </tr>
+
+            <tr>
+              <td style="font-weight: bold">Sandy Bay Ojibway First Nation</td>
+              <td>Anishinaabe (Ojibwe)</td>
+            </tr>
+
+            <tr>
+              <td style="font-weight: bold">Swan Lake First Nation</td>
+              <td>Anishinaabe (Ojibwe)</td>
+            </tr>
+
+            <tr>
+              <td style="font-weight: bold">Dakota Plains Wahpeton Nation</td>
+              <td>Dakota</td>
+            </tr>
+
+            <tr>
+              <td style="font-weight: bold">Dakota Tipi First Nation</td>
+              <td>Dakota</td>
+            </tr>
+
+            <tr>
+              <td style="font-weight: bold">Canupawakpa Dakota Nation</td>
+              <td>Dakota</td>
+            </tr>
+
+            <tr>
+              <td style="font-weight: bold">Buffalo Point First Nation</td>
+              <td>Anishinaabe (Ojibwe)</td>
+            </tr>
+
+            <tr>
+              <td style="font-weight: bold">
+                Little Saskatchewan First Nation
+              </td>
+              <td>Cree</td>
+            </tr>
+
+            <tr>
+              <td style="font-weight: bold">Fisher River Cree Nation</td>
+              <td>Cree</td>
+            </tr>
+
+            <tr>
+              <td style="font-weight: bold">Kinonjeoshtegon First Nation</td>
+              <td>Cree/Ojibwe Heritage</td>
+            </tr>
+          </table>
+        </div>
+      </section>
       <section>
         <!--
           It has an h2 class of "h2headings" to style the heading 
