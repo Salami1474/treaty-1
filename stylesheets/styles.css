@@ -321,6 +321,7 @@ footer {
   /* Moves element halfway across container. */
   transform: translateX(-50%);
   /* Pulls it back to perfectly center it. */
+  margin-bottom: 15px;
 }
 
 .h3headings {
