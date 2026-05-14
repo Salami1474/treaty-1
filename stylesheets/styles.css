@@ -21,10 +21,12 @@ html {
 }
 
 body {
+  position: relative;
+
   background-color: #f5f5f5;
   /* Sets the background color of the entire page (a very light gray). */
 
-  margin: 0;
+  margin: 0 auto;
   /* Removes the browser’s default outer spacing around the page. */
 
   font-family: Georgia, "Times New Roman", serif;
@@ -32,6 +34,22 @@ body {
 
   font-size: 1.6rem;
   /* Sets the default text size for the page (1.6rem = 16px). */
+
+  background: linear-gradient(to bottom, #f5f7fa, #dbe8ff);
+  /* Creates a vertical gradient background from light gray-blue to a slightly darker blue. */
+
+  width: 95%;
+  /* Sets the width of the body to 95% of the viewport, creating some margin on the sides. */
+
+  animation: fadeInBody 1s ease-in;
+}
+@keyframes fadeInBody {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 #treaty-logo {
@@ -53,10 +71,6 @@ body {
 
   margin-bottom: 30px;
   /* Adds space below the element, separating it from content underneath. */
-
-  align-items: center;
-  /* Vertically centers content inside the element.
-     Only works with flexbox, so it does nothing here. */
 }
 
 h1 {
@@ -139,11 +153,20 @@ p {
   line-height: 140%;
   /* Controls spacing between lines (makes text easier to read). */
 
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  letter-spacing: 0.02em;
+  /* Adds a little extra space between letters for better readability. */
+
+  word-spacing: 0.1em;
+  /* Adds extra space between words for improved readability. */
+
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   /* Adds a soft shadow: 0 horizontal, 5px vertical, 10px blur, light transparency. */
 
   margin-bottom: 20px;
   /* Adds space below the box. */
+
+  background: linear-gradient(to bottom, #d9e1e8, #ccdae3);
+  /* Adds a subtle vertical gradient to the box, from a lighter to a slightly darker gray-blue. */
 }
 
 #nav-links {
@@ -287,8 +310,26 @@ footer {
 
   padding: 10px;
   /* Space inside the footer. */
+  animation: pulse 0.5s ease infinite;
+  /* Applies a pulse animation to the footer, making it subtly grow and shrink continuously. */
 }
-
+footer:hover {
+  animation-name: pulse;
+  animation: duration 0.5s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  /* Applies a pulse animation when the mouse hovers over the logo. */
+  @keyframes pulse {
+    from(
+      transform: scale(1);
+      /* Starts at the original size. */
+    )
+    to {
+      transform: scale(1.3);
+      /* Scales the logo up to 110% of its original size, creating a pulsing effect. */
+    }
+  }
+}
 .h2headings {
   background-color: #3e8e90;
   /* Teal background for styled headings. */
