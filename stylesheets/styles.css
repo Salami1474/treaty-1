@@ -35,12 +35,20 @@ body {
 
   background: linear-gradient(to bottom, #f5f7fa, #dbe8ff);
   /* Creates a vertical gradient background from light gray-blue to a slightly darker blue. */
+  background: -webkit-linear-gradient(to bottom, #f5f7fa, #dbe8ff);
+  /* For older versions of Chrome and Safari */
 
   width: 95%;
   /* Sets the width of the body to 95% of the viewport, creating some margin on the sides. */
 
   animation: fadeInBody 1s ease-in;
   /* Adds a fade-in animation to the body when the page loads. */
+  -webkit-animation: fadeInBody 1s ease-in;
+  /* For older browsers (Chrome, Safari) */
+  -moz-animation: fadeInBody 1s ease-in;
+  /* For older versions of Firefox */
+  -o-animation: fadeInBody 1s ease-in;
+  /* For older versions of Opera */
 }
 @keyframes fadeInBody {
   /* Defines the fade-in animation for the body */
@@ -54,8 +62,14 @@ body {
   }
 }
 .fadeInBody {
-  /* Chrome, Safari */ /* Firefox (old versions) */ /* Old Opera */
   animation: fadeInBody 1s ease-in;
+  /* Applies the fade-in animation to any element with the class "fadeInBody". */
+  -webkit-animation: fadeInBody 1s ease-in;
+  /* For older browsers (Chrome, Safari) */
+  -moz-animation: fadeInBody 1s ease-in;
+  /* For older versions of Firefox */
+  -o-animation: fadeInBody 1s ease-in;
+  /* For older versions of Opera */
 }
 
 #treaty-logo {
@@ -100,6 +114,10 @@ h1 {
 
   border-radius: 20px;
   /* Rounds the corners of the heading box slightly. */
+  -webkit-border-radius: 20px;
+  /* For older browsers (Chrome, Safari) */
+  -moz-border-radius: 20px;
+  /* For older versions of Firefox */
 
   font-size: 4rem;
   /* Makes the text large (4rem = 40px). */
@@ -114,7 +132,7 @@ h2 {
 }
 
 p {
-  color: black;
+  color: #121212;
   /* Sets paragraph text color to black. */
 
   font-size: 20px;
@@ -133,19 +151,37 @@ p {
 
   border-radius: 25px;
   /* Smoothly rounds the corners of the box. */
+  -webkit-border-radius: 25px;
+  /* For older browsers (Chrome, Safari) */
+  -moz-border-radius: 25px;
+  /* For older versions of Firefox */
 
-  width: 700px;
-  /* Fixes the width of the box to 700px (doesn’t change with screen size). */
+  width: 65%;
+  /* Fixes the width of the box to 70% of its container (changes with screen size). */
 
   position: relative;
   /* Allows the element to be moved relative to its normal position. */
 
   left: 50%;
   /* Moves the element 50% from the left side of its container. */
-
-  transform: translateX(-50%);
-  /* Pulls the element back left by 50% of its own width.
-     This combination perfectly centers the element horizontally. */
+  transform: translateX(
+    -50%
+  ); /* 
+      Pulls the element back left by 50% of its own width.
+      This combination perfectly centers the element horizontally. 
+    */
+  -webkit-transform: translateX(
+    -50%
+  ); /* Same centering trick, just using prefixes for older browsers. */
+  -moz-transform: translateX(
+    -50%
+  ); /* Same centering trick, just using prefixes for older browsers. */
+  -ms-transform: translateX(
+    -50%
+  ); /* Same centering trick, just using prefixes for older browsers. */
+  -o-transform: translateX(
+    -50%
+  ); /* Same centering trick, just using prefixes for older browsers. */
 
   font-size: 2rem;
   /* Sets text inside to 2rem (20px). */
@@ -167,25 +203,18 @@ p {
 
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   /* Adds a soft shadow: 0 horizontal, 5px vertical, 10px blur, light transparency. */
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  /* For older browsers (Chrome, Safari) */
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  /* For older versions of Firefox */
 
   margin-bottom: 20px;
   /* Adds space below the box. */
-
   background: linear-gradient(to bottom, #d9e1e8, #ccdae3);
   /* Adds a subtle vertical gradient to the box, from a lighter to a slightly darker gray-blue. */
 
-  transition:
-    transform 0.43s ease-out,
-    /* Smoothly moves the element over 0.43 seconds when hovered. */ box-shadow
-      0.2s ease-in;
-  /* Smoothly changes the box shadow over 0.2 seconds when hovered. */
-}
-
-.div-paragraphs:hover {
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-  /* Adds a subtle shadow effect on hover. */
-  transform: translate(-360px, -20px);
-  /* Moves the element slightly up and to the left on hover. */
+  background: -webkit-linear-gradient(to bottom, #f5f7fa, #dbe8ff);
+  /* For older versions of Chrome, Safari */
 }
 
 #nav-links {
@@ -227,6 +256,10 @@ p {
 
   border-radius: 20px;
   /* Rounds corners of nav bar. */
+  -webkit-border-radius: 20px;
+  /* For older browsers (Chrome, Safari) */
+  -moz-border-radius: 20px;
+  /* For older versions of Firefox */
   flex-wrap: wrap;
   /* 
     Allows nav items to wrap to the next line on smaller screens to avoid the 
@@ -246,12 +279,24 @@ nav a {
 
   border-radius: 15px;
   /* Rounds the corners of links. */
+  -webkit-border-radius: 15px;
+  /* For older browsers (Chrome, Safari) */
+  -moz-border-radius: 15px;
+  /* For older versions of Firefox */
 
   background-color: #1f3a5f;
   /* Gives links a background color. */
 
   transition: background-color 0.3s ease;
   /* Smoothly changes background color over 0.3 seconds when hovered. */
+  -webkit-transition: background-color 0.3s ease;
+  /* For older browsers (Chrome, Safari) */
+  -moz-transition: background-color 0.3s ease;
+  /* For older versions of Firefox */
+  -ms-transition: background-color 0.3s ease;
+  /* For older versions of Internet Explorer */
+  -o-transition: background-color 0.3s ease;
+  /* For older versions of Opera */
 }
 
 nav a:hover {
@@ -263,6 +308,12 @@ nav a:hover {
 
   transition: ease-in-out 0.3s;
   /* Smooth animation effect for hover changes. */
+  -webkit-transition: background-color 0.3s ease;
+  /* For older browsers (Chrome, Safari) */
+  -moz-transition: background-color 0.3s ease;
+  /* For older versions of Firefox */
+  -o-transition: background-color 0.3s ease;
+  /* For older versions of Opera */
 
   padding: 20px 25px;
   /* Increases size on hover, making it feel interactive. */
@@ -323,14 +374,16 @@ footer {
 
   border-radius: 30px;
   /* Rounded corners. */
+  -webkit-border-radius: 30px;
+  /* For older browsers (Chrome, Safari) */
+  -moz-border-radius: 30px;
+  /* For older versions of Firefox */
 
   font-size: 2rem;
   /* Text size (20px). */
 
   padding: 10px;
   /* Space inside the footer. */
-  animation: pulse 0.5s ease infinite;
-  /* Applies a pulse animation to the footer, making it subtly grow and shrink continuously. */
 }
 
 .h2headings {
@@ -344,6 +397,10 @@ footer {
   /* Space inside the element. */
   border-radius: 15px;
   /* Rounded corners. */
+  -webkit-border-radius: 15px;
+  /* For older browsers (Chrome, Safari) */
+  -moz-border-radius: 15px;
+  /* For older versions of Firefox */
   font-family: serif;
   /* Uses a serif font style. */
   font-size: 2.8rem;
@@ -357,21 +414,35 @@ footer {
   margin: 0 auto;
   /* Helps center the element horizontally. */
   width: -webkit-fit-content;
+  /* Shrinks width to match content size for older browsers of Chrome and Safari. */
+  /* Shrinks width to match content size for older versions of Firefox. */
   width: fit-content;
   /* Shrinks width to match content size. */
   position: relative;
   /* Enables positioning adjustments. */
   left: 50%;
   /* Moves element halfway across container. */
-  transform: translateX(-50%);
-  /* Pulls it back to perfectly center it. */
+  transform: translateX(-50%); /* Pulls it back to perfectly center it. */
+  -webkit-transform: translateX(
+    -50%
+  ); /* Pulls it back to perfectly center it (for older browsers). */
+  -moz-transform: translateX(
+    -50%
+  ); /* Pulls it back to perfectly center it (for older browsers). */
+  -ms-transform: translateX(
+    -50%
+  ); /* Pulls it back to perfectly center it (for older browsers). */
+  -o-transform: translateX(
+    -50%
+  ); /* Pulls it back to perfectly center it (for older browsers). */
+
   margin-bottom: 15px;
 }
 
 .h3headings {
   background-color: #3e8e90;
   /* Teal background for styled headings. */
-  color: #ffffff;
+  color: #f5f5f5;
   /* White colour for the text. */
   text-align: center;
   /* Centers the text. */
@@ -379,6 +450,10 @@ footer {
   /* Space inside the element. */
   border-radius: 15px;
   /* Rounds corners of the element. */
+  -webkit-border-radius: 15px;
+  /* For older browsers (Chrome, Safari) */
+  -moz-border-radius: 15px;
+  /* For older versions of Firefox */
   font-family: serif;
   /* Uses a serif font style. */
   font-size: 2rem;
@@ -390,8 +465,20 @@ footer {
   /* Positions the element relative to its normal position. */
   left: 50%;
   /* Moves the element halfway across the container. */
-  transform: translateX(-50%);
-  /* Same centering trick as above. */
+  transform: translateX(-50%); /* Same centering trick as in .h2headings. */
+  -webkit-transform: translateX(
+    -50%
+  ); /* Same centering trick, just using prefixes for older browsers. */
+
+  -moz-transform: translateX(
+    -50%
+  ); /* Same centering trick, just using prefixes for older browsers. */
+  -ms-transform: translateX(
+    -50%
+  ); /* Same centering trick, just using prefixes for older browsers. */
+  -o-transform: translateX(
+    -50%
+  ); /* Same centering trick, just using prefixes for older browsers. */
 
   display: inline-block;
   /* Allows width and centering while staying inline. */

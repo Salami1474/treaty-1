@@ -3,9 +3,8 @@
   Course: Web Development II
   Teacher: Mr. Hardman
   School: Pembina Trails Collegiate/Pembina Trails Early College
-  Date Last Modified: May 11th 2026.
+  Date Last Modified: May 14th 2026.
 -->
-<!--Fix the borders on each page.-->
 
 <!doctype html>
 <html lang="en">
@@ -19,9 +18,10 @@
         margin-bottom: 30px; /* Gives the bottom of the every section a margin space of 30 pixels at the bottom. */
       }
       span#treaty-date {
-        color: #c9a44c;
-        text-decoration: underline;
-        text-decoration-color: #c9a44c;
+        color: #c9a44c; /* Changes the text color of the treaty date to #c9a44c. */
+
+        text-decoration: underline; /* Adds an underline to the text of the treaty date span. */
+        text-decoration-color: #c9a44c; /* Sets the color of the underline to #c9a44c, matching the text color. */
       }
       #treaty-map {
         display: flex; /* Displays the treaty map as a flexible container, allowing for flexible layout and alignment of its content. */
@@ -34,6 +34,19 @@
         transform: translateX(
           -50%
         ); /* Adjusts the position of the treaty map to ensure it is centered by removing 50 percent from the left. */
+        -webkit-transform: translateX(
+          -50%
+        ); /* Adjusts the position of the treaty map to ensure it is centered by removing 50 percent from the left for WebKit-based browsers. */
+
+        -moz-transform: translateX(
+          -50%
+        ); /* Adjusts the position of the treaty map to ensure it is centered by removing 50 percent from the left for Mozilla-based browsers. */
+        -ms-transform: translateX(
+          -50%
+        ); /* Adjusts the position of the treaty map to ensure it is centered by removing 50 percent from the left for Microsoft browsers. */
+        -o-transform: translateX(
+          -50%
+        ); /* Adjusts the position of the treaty map to ensure it is centered by removing 50 percent from the left for Opera browsers. */
         width: 600px; /* Sets the width of the treaty map to 600 pixels. */
         position: relative; /* The treaty map image is positioned relative to its normal position in the document flow. */
       }
@@ -49,6 +62,18 @@
         transform: translateX(
           -50%
         ); /*Adjusts the position of the treaty map to ensure it is centered by removing 50 percent from the left. */
+        -webkit-transform: translateX(
+          -50%
+        ); /* Adjusts the position of the treaty map to ensure it is centered by removing 50 percent from the left for WebKit-based browsers. */
+        -moz-transform: translateX(
+          -50%
+        ); /* Adjusts the position of the treaty map to ensure it is centered by removing 50 percent from the left for Mozilla-based browsers. */
+        -ms-transform: translateX(
+          -50%
+        ); /* Adjusts the position of the treaty map to ensure it is centered by removing 50 percent from the left for Microsoft browsers. */
+        -o-transform: translateX(
+          -50%
+        ); /* Adjusts the position of the treaty map to ensure it is centered by removing 50 percent from the left for Opera browsers. */
         width: 500px; /* Makes the width of the image 500px. */
         position: relative; /* The treaty medal image is positioned relative to its normal position in the document flow. */
       }
